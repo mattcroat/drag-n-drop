@@ -1,0 +1,34 @@
+[data-pickzone],
+[data-dropzone] {
+  max-width: 600px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  border: 4px dotted hsl(0, 0%, 80%);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px);
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  width: 60px;
+  height: 50px;
+  padding: 1rem;
+  background-color: hsl(180, 100%, 25%);
+  color: hsl(0, 0%, 98%);
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 hsla(180, 100%, 25%, 0.4);
+  cursor: move;
+  touch-action: none;
+}
+
+.item.dragging {
+  transform: rotate(-5deg)
+}
