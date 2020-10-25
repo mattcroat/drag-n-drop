@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   margin-top: 2rem;
   padding: 0.8rem;
-  border: 4px dotted hsl(0, 0%, 80%);
+  border: 4px dashed hsl(200, 100%, 80%);
 
   display: grid;
   grid-template-columns: repeat(auto-fit, 50px);
@@ -32,8 +32,14 @@ body {
   cursor: move;
   touch-action: none;
   user-select: none;
+  transition: transform 100ms linear;
 }
 
 .item.dragging {
-  transform: rotate(-5deg)
+  position: absolute;
+  transform: rotate(-5deg);
+}
+
+.item.clone {
+  background-color: hsl(180, 100%, 25%);
 }
