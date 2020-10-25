@@ -6,5 +6,8 @@ items.forEach(item => {
     item.addEventListener('pointerdown', (event) => {
         item.classList.add('dragging');
     });
+    item.addEventListener('pointerup', (event) => {
+        item.classList.remove('dragging');
+    });
 });
 //# sourceMappingURL=app.js.map

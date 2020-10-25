@@ -7,4 +7,8 @@ items.forEach(item => {
   item.addEventListener('pointerdown', (event: PointerEvent) => {
     item.classList.add('dragging')
   })
+
+  item.addEventListener('pointerup', (event: PointerEvent) => {
+    item.classList.remove('dragging')
+  })
 })
